@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taskify</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="header">
+    <h1>Taskify</h1>
+    <button id="themeToggle" class="theme-btn">
+  <i class="fa fa-lightbulb-o"></i>
+</button>
+  </div>
+  
+  <p id="meee">Write task in mobile by Alvin Baja Rosales</p>
+  
+  
+  
+  <div class="input-group">
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addBtn">Add Task</button>
+
+  </div>
+
+  <div class="controls">
+    <button id="sortAsc">Sort Asc</button>
+    <button id="sortDesc">Sort Desc</button>
+    <button id="resetSort">Reset Order</button>
+    <button id="deleteSelected"><i class="fa fa-trash fa-lg"></i></button>
+  </div>
+
+  <div class="counters">
+    <span>Total: <b id="total">0</b></span>
+    <span>Completed: <b id="completed">0</b></span>
+    <span>Deleted: <b id="deleted">0</b></span>
+    <span>Edited: <b id="edited">0</b></span>
+  </div>
+  <hr>
+
+  <ul id="taskList"></ul>
+  
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

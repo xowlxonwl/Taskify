@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.app {
+  background: white;
+  width: 100%;
+  max-width: 550px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+p#meee {
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input#taskInput {
+  flex: 1;
+  padding: 9px;
+}
+
+button {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 5px;
+  gap: 6px;
+}
+
+li span {
+  flex: 1;
+  margin-left: 6px;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: green;
+}
+
+li.selected {
+  background: #cce5ff;
+}
+
+input.select {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+button.complete, button.remove {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+}
+
+button.complete:hover, button.remove:hover {
+  background: #e0e0e0;
+}
+
+button.complete i, button.remove i {
+  font-size: 16px;
+  color: #333;
+}
+
+.counters {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+body.dark {
+  background: #121212;
+}
+
+body.dark .app {
+  background: #1e1e1e;
+  color: white;
+}
+
+.theme-btn {
+  background: none;
+  border: 2px solid #ccc;
+  font-size: 18px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  padding: 0;
+}
